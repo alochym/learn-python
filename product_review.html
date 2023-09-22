@@ -1,0 +1,76 @@
+<div id="averageCustomerReviews_feature_div" class="celwidget" data-feature-name="averageCustomerReviews"
+    data-csa-c-type="widget" data-csa-c-content-id="averageCustomerReviews"
+    data-csa-c-slot-id="averageCustomerReviews_feature_div" data-csa-c-asin="B08C1W5N87"
+    data-csa-c-is-in-initial-active-row="false" data-csa-c-id="pn98rw-kdjoqh-bt9xmo-jr9m7s">
+    <style type="text/css">
+        /* 
+* Fix for UDP-1061. Average customer reviews has a small extra line on hover 
+* https://omni-grok.amazon.com/xref/src/appgroup/websiteTemplates/retail/SoftlinesDetailPageAssets/udp-intl-lock/src/legacy.css?indexName=WebsiteTemplates#40
+*/
+        .noUnderline a:hover {
+            text-decoration: none;
+        }
+
+        .cm-cr-review-stars-spacing-big {
+            margin-top: 1px;
+        }
+    </style>
+
+    <div id="averageCustomerReviews" data-asin="B08C1W5N87" data-ref="dpx_acr_pop_">
+        <span class="a-declarative" data-action="acrStarsLink-click-metrics" data-csa-c-type="widget"
+            data-csa-c-func-deps="aui-da-acrStarsLink-click-metrics" data-acrstarslink-click-metrics="{}"
+            data-csa-c-id="gmyqe8-7n7hns-hsfjya-ndiqzl">
+            <span id="acrPopover" class="reviewCountTextLinkedHistogram noUnderline" title="4.7 out of 5 stars">
+                <span class="a-declarative" data-action="a-popover" data-csa-c-type="widget"
+                    data-csa-c-func-deps="aui-da-a-popover"
+                    data-a-popover="{&quot;max-width&quot;:&quot;700&quot;,&quot;closeButton&quot;:&quot;false&quot;,&quot;name&quot;:&quot;star_ratings_popover&quot;,&quot;position&quot;:&quot;triggerBottom&quot;,&quot;url&quot;:&quot;/gp/customer-reviews/widgets/average-customer-review/popover/ref=dpx_acr_pop_?contextId=dpx&amp;asin=B08C1W5N87&quot;}"
+                    data-csa-c-id="fanvbb-qra0w6-zhak6o-3le509">
+                    <a href="javascript:void(0)" role="button" class="a-popover-trigger a-declarative">
+                        <span class="a-size-base a-color-base"> 4.7 </span>
+                        <i class="a-icon a-icon-star a-star-4-5 cm-cr-review-stars-spacing-big">
+                            <span class="a-icon-alt">4.7 out of 5 stars</span>
+                        </i>
+                        <i class="a-icon a-icon-popover"></i>
+                    </a>
+                </span>
+                <span class="a-letter-space"></span>
+            </span>
+        </span>
+        <span class="a-letter-space"></span>
+        <span class="a-declarative" data-action="acrLink-click-metrics" data-csa-c-type="widget"
+            data-csa-c-func-deps="aui-da-acrLink-click-metrics" data-acrlink-click-metrics="{}"
+            data-csa-c-id="pyuheq-8aqh0a-shx3n8-ai9wvy">
+            <a id="acrCustomerReviewLink" class="a-link-normal" href="#customerReviews">
+                <span id="acrCustomerReviewText" class="a-size-base">414,986 ratings</span>
+            </a> 
+        </span>
+        <script type="text/javascript">
+
+            var dpAcrHasRegisteredArcLinkClickAction;
+            P.when('A', 'ready').execute(function (A) {
+                if (dpAcrHasRegisteredArcLinkClickAction !== true) {
+                    dpAcrHasRegisteredArcLinkClickAction = true;
+                    A.declarative(
+                        'acrLink-click-metrics', 'click',
+                        { "allowLinkDefault": true },
+                        function (event) {
+                            if (window.ue) {
+                                ue.count("acrLinkClickCount", (ue.count("acrLinkClickCount") || 0) + 1);
+                            }
+                        }
+                    );
+                }
+            });
+        </script>
+        <script type="text/javascript">
+            P.when('A', 'cf').execute(function (A) {
+                A.declarative('acrStarsLink-click-metrics', 'click', { "allowLinkDefault": true }, function (event) {
+                    if (window.ue) {
+                        ue.count("acrStarsLinkWithPopoverClickCount", (ue.count("acrStarsLinkWithPopoverClickCount") || 0) + 1);
+                    }
+                });
+            });
+        </script>
+
+    </div>
+</div>
