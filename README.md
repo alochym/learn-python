@@ -15,8 +15,8 @@ Using Requests and Beautiful Soup version 4
 | 03  | selenium       | Using to automate Microsoft Edge browser enable javascript |
 
 1. Using browser
-   1. microsoft edge driver - 117.0.2045.40-1
-   2. microsoft edge - 117.0.2045.40-1
+   1.Google Chrome driver - Version 117.0.5938.92
+   2.Google Chrome - Version 117.0.5938.92
    3. https://www.pythonrequests.com/python-requests-you-need-to-enable-javascript/
 2. python3 -m venv .env
 3. source .env/bin/activate
